@@ -2,7 +2,7 @@
 <i><u>Red Team Arsenal</i></u>
 </p>
 <p align="center">
-  <img src="https://github.com/your-username/Red-Team-Arsenal/blob/main/reso/red-team-gif.gif"> <!-- Replace with your actual GIF path or URL -->
+  <img src="https://github.com/vvswift/Red-Team-Arsenal/blob/main/reso/red-team-gif.gif"> <!-- Replace with your actual GIF path or URL -->
 </p>
 Comprehensive collection of tools, scripts, and techniques for conducting red team operations and adversary simulations.
 All the tools in this repository are a collection that continues to grow, the author's contacts are listed on the inside of each tool if possible.
