@@ -14,7 +14,7 @@ This project is intended for security researchers and students.
  >  
  > This repository is provided for educational purposes only and intended for authorized security research.
  > Use of these materials in unauthorized or illegal activities is strictly prohibited.
-<h2 align="center">[Overview Specifics]</h2>
+<h2 align="center">Overview Specifics</h2>
 <p align="center">
   <img alt="Red Team" src="https://img.shields.io/badge/Red Team Operations -red?style=flat-square" />
   <img alt="Adversary Simulation" src="https://img.shields.io/badge/Adversary Simulation-brightgreen?style=flat-square" />
