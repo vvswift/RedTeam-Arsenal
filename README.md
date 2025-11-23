@@ -6,7 +6,7 @@
 </p>
 Comprehensive collection of tools, scripts, and techniques for conducting red team operations and adversary simulations.
 All the tools in this repository are a collection that continues to grow, the author's contacts are listed on the inside of each tool if possible.
-This project is intended for security researchers and students.  All tools in this repository are constantly being updated. The authors contact information is provided on the inside of each tool, where possible.
+This project is intended for security researchers and students. 
 
   
   ---
