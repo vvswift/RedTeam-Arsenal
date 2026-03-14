@@ -1,0 +1,4 @@
+paramiko 
+python-telegram-bot 
+rich 
+pystyle
