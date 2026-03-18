@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = [
+    "pisshoff-server",
+    "pisshoff-timescaledb-exporter",
+    "pisshoff-types"
+]
+
+[patch."crates-io"]
+thrussh = { git = "https://github.com/JordanForks/thrussh" }
+thrussh-keys = { git = "https://github.com/JordanForks/thrussh" }
